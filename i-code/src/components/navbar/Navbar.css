@@ -1,0 +1,80 @@
+.navbar{
+    display: flex;
+    height: 15vh;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.n-left{
+    font-size: 36px;
+    flex: 1;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+}
+i{
+    color: red;
+    
+}
+.n-right{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 20px;
+}
+.n-list{
+    flex: 10;
+}
+.n-list>ul{
+    display: flex;
+    gap: 2rem;
+    margin-right: 3rem;
+    list-style: none;
+}
+.n-list>ul>li:hover{
+    cursor: pointer;
+    color: var(--orange);
+    
+}
+.n-logo{
+    font-size: 75px;
+    color:black;
+    margin-left: 3rem;
+}
+.n-text{
+    margin-right: 100px;
+    color: black;
+}
+.n-sign-up{
+    margin-right: 3rem;
+}
+.bars img{
+   display: none;
+}
+@media screen and (max-width:940px) {
+    .navbar{
+        height: 8vh;
+    }
+    .n-list>ul{
+        display: none;
+        
+    }
+    .n-text{
+        display: none;
+    }
+    .n-logo{
+        font-size: 45px;
+    }
+    .bars img{
+        display: block;
+        width: 30px;
+        height: 50px;
+        font-size: 50px;
+        margin-right: 2rem;
+    }
+    .n-sign-up{
+        margin-right:100px;
+        position: absolute;
+    }
+}
